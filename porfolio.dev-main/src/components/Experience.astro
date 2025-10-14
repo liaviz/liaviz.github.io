@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Marzo 2025 - Junio 2025",
+    title: "Prácticas como Desarrolladora Web",
+    company: "Fundación General de la Universidad de la Laguna FGULL",
+    description:
+      "Durante mi período en el departamento de informática, lideré el desarrollo del sitio web de CoralCheck utilizando WordPress. Creé soluciones a medida mediante plugins personalizados en PHP que respondían a los requisitos específicos del proyecto. Trabajé con bases de datos para gestionar el contenido dinámico y asumí la responsabilidad completa del despliegue, llevando el proyecto desde el entorno local hasta su publicación web, incluyendo la configuración del hosting. El resultado fue un sitio completamente responsive que se adapta a las necesidades de los usuarios en cualquier plataforma.",
+  },
+  {
+    date: "Febrero 2024 - Junio 2024",
+    title: "Prácticas de Marketing y Publicidad",
+    company: "AgnosPcb",
+    description:
+      "Mi experiencia en AgnosPCB, empresa tecnológica de inteligencia artificial para microchips, fue el punto de partida hacia el desarrollo. Me asignaron la creación de una documentación web de manera independiente, lo que me introdujo a GitHub y Visual Studio. Este proyecto despertó mi interés por la programación, y el ecosistema tecnológico de la empresa —con su IA propia, sistemas de encriptación y drones— consolidó mi decisión de dedicarme al desarrollo web.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
